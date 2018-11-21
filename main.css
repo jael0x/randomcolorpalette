@@ -1,0 +1,120 @@
+html, body, .row, .container-fluid{
+    height: 100%;
+    background-color: black;
+}
+
+.colc{
+	height: 33.33%;
+	border-radius: 15%;
+	outline: none;
+}
+
+.boton{
+	width:60px;
+	height:60px;
+	border-radius:100%;
+	background:#F44336;
+	border:none;
+	outline: none;
+	color:#FFF;
+	font-size:36px;
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	transition:.3s;
+	position:absolute;
+    bottom: 33.33%;
+    margin-bottom: -30px;
+    left: 66.66%;
+    margin-left: -30px;
+}
+
+.boton:active{
+	transform:scale(1.5);
+	outline: none;
+}
+
+.boton:focus{
+	outline: none;
+}
+
+.boton:hover{
+	outline: none;
+}
+
+#snackbar, #mini {
+	visibility: hidden;
+	min-width: 200px;
+	height: 50px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    border-radius: 10px;
+    padding: 12px;
+    position: fixed;
+    z-index: 1;
+    right: 3%;
+    top: 10%;
+    font-size: 17px;
+}
+
+#mini{
+	width: 20px;
+	height: 20px;
+    border-radius: 100%;
+	min-width: 20px;
+	right:3%;
+    margin-top: 12px;
+    margin-right: 10px;
+}
+
+#snackbar.show{
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {right: 0; opacity: 0;} 
+    to {right: 3%; opacity: 1;}
+}
+
+@keyframes fadein {
+    from {right: 0; opacity: 0;}
+    to {right: 3%; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {right: 3%; opacity: 1;} 
+    to {right: 0; opacity: 0;}
+}
+
+@keyframes fadeout {
+    from {right: 3%; opacity: 1;}
+    to {right: 0; opacity: 0;}
+}
+
+#mini.show{
+    visibility: visible;
+    -webkit-animation: fadeinm 0.5s, fadeoutm 0.5s 2.5s;
+    animation: fadeinm 0.5s, fadeoutm 0.5s 2.5s;
+}
+
+@-webkit-keyframes fadeinm {
+    from {right: 0; opacity: 0;} 
+    to {right: 3%; opacity: 1;}
+}
+
+@keyframes fadeinm {
+    from {right: 0; opacity: 0;}
+    to {right: 3%; opacity: 1;}
+}
+
+@-webkit-keyframes fadeoutm {
+    from {right: 3%; opacity: 1;} 
+    to {right: 0; opacity: 0;}
+}
+
+@keyframes fadeoutm {
+    from {right: 3%; opacity: 1;}
+    to {right: 0; opacity: 0;}
+}
