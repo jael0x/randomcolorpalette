@@ -24,7 +24,7 @@ function copyColor(Box) {
 
 	let X = document.getElementById('snackbar'),
 		Y = document.getElementById('mini')
-	X.innerHTML = color + ' Copied!'
+	X.innerHTML = color + ' COPIED'
 	Y.style.backgroundColor = color
 	X.className = 'show'
 	Y.className = 'show'
